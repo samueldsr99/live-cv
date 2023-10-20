@@ -75,6 +75,7 @@ body {
     padding-bottom: 40px;
 
     @media (min-width: 768px) {
+        position: relative;
         flex-basis: 60%;
         padding-top: 156px;
         padding-bottom: 156px;
@@ -86,7 +87,17 @@ body {
     }
 }
 
-.content > *:not(.about-section) {
+.particles-pattern {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 300px;
+    width: 450px;
+    background-image: url("assets/icons/particles-1.svg");
+    background-repeat: no-repeat;
+}
+
+.content > *:is(section):not(.about-section) {
     padding-left: 20px;
     padding-right: 20px;
 
@@ -159,7 +170,7 @@ body {
     margin-top: 37px;
     width: 100%;
     padding: 25px 31px 48px 31px;
-    background-color: rgba(248, 248, 248, 0.50);
+    background-color: rgba(248, 248, 248);
 
     @media (min-width: 768px) {
         margin-top: 97px
