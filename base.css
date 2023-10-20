@@ -1,0 +1,37 @@
+:root {
+    --primary: #1a73e8;
+}
+
+
+hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #EAEAEA;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 46px;
+    }
+}

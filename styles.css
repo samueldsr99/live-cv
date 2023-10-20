@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #DFDFDF;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    max-width: 1740px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        overflow-y: hidden;
+    }
+}
+
+.profile-img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.aside {
+    background-color: white;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: 768px) {
+        flex-basis: 40%;
+        /* max-width: 575px; */
+        padding: 119px 60px;
+        justify-content: end;
+        width: 100%;
+        background-color: #DFDFDF;
+    }
+}
+
+.contact-links {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    @media (min-width: 768px) {
+        justify-content: start;
+    }
+}
+
+.contact-links > a {
+    text-decoration: none;
+}
+
+.line-break {
+    max-width: 480px;
+    margin: 0px auto;
+
+    @media (min-width: 768px) {
+        margin-left: 30px;
+    }
+}
+
+.content {
+    background-color: white;
+    padding-bottom: 40px;
+
+    @media (min-width: 768px) {
+        flex-basis: 60%;
+        padding-top: 156px;
+        padding-bottom: 156px;
+        width: 100%;
+        align-items: start;
+
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+}
+
+.content > *:not(.about-section) {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media (min-width: 768px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.head-section {
+    padding-bottom: 46px;
+}
+
+.contact-section {
+    padding-top: 26px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 23px;
+    column-gap: 58px;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        padding-top: 24px;
+    }
+}
+
+.contact-section__location-item {
+    text-align: center;
+    color: #6A6A6A;
+    font-size: 14px;
+
+    @media (min-width: 768px) {
+        text-align: left;
+    }
+}
+
+.contact-section__location-item > p {
+    margin-top: 3px;
+    font-weight: 400;
+}
+
+.name {
+    text-align: center;
+
+    @media (min-width: 768px) {
+        text-align: left;
+    }
+}
+
+.last-name {
+    color: red;
+}
+
+.role {
+    margin-top: 17px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6A6A6A;
+
+    @media (min-width: 768px) {
+        text-align: left;
+        font-size: 14px;
+    }
+}
+
+.about-section {
+    margin-top: 37px;
+    width: 100%;
+    padding: 25px 31px 48px 31px;
+    background-color: rgba(248, 248, 248, 0.50);
+
+    @media (min-width: 768px) {
+        margin-top: 97px
+    }
+}
+
+.section-title {
+    color: #6A6A6A;
+    text-transform: uppercase;
+}
+
+.about-section__content {
+    margin-top: 41px;
+    max-width: 480px;
+}
+
+.about-section__content > * {
+    margin-top: 20px;
+}
+
+.education-section {
+    margin-top: 23px;
+    place-self: start;
+
+    @media (min-width: 768px) {
+        margin-top: 46px;
+    }
+}
+
+.education-section__content > article {
+    margin-top: 43px
+}
+
+.experience-section {
+    margin-top: 23px;
+    place-self: start;
+
+    @media (min-width: 768px) {
+        margin-top: 46px;
+    }
+}
+
+.experience-section__content > article {
+    margin-top: 43px
+}
+
+.experience-section__item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.experience-section__item__img {
+    object-fit: cover;
+}
+
+.experience-section__item__content > h3 {
+    color: #6A6A6A;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.experience-section__item__content > h4 {
+    margin-top: 7px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.experience-section__item__content > p {
+    margin-top: 5px;
+    color: #6A6A6A;
+    font-size: 16px;
+    font-weight: 400;
+}
