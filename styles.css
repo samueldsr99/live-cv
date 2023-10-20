@@ -206,7 +206,7 @@ body {
     margin-top: 43px
 }
 
-.experience-section__item {
+.entry-item {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -216,23 +216,23 @@ body {
     }
 }
 
-.experience-section__item__img {
+.entry-item__img {
     object-fit: cover;
 }
 
-.experience-section__item__content > h3 {
+.entry-item__content > h3 {
     color: #6A6A6A;
     font-size: 14px;
     font-weight: 400;
 }
 
-.experience-section__item__content > h4 {
+.entry-item__content > h4 {
     margin-top: 7px;
     font-size: 26px;
     font-weight: 400;
 }
 
-.experience-section__item__content > p {
+.entry-item__content > p {
     margin-top: 5px;
     color: #6A6A6A;
     font-size: 16px;
