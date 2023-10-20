@@ -1,12 +1,15 @@
 :root {
-    --primary: #1a73e8;
+    --primary: red;
+    --gray-100: #EAEAEA;
+    --gray-200: #DFDFDF;
+    --gray-300: #6A6A6A;
 }
 
 
 hr {
     width: 100%;
     border: none;
-    border-top: 1px solid #EAEAEA;
+    border-top: 1px solid var(--gray-100);
 }
 
 h1 {

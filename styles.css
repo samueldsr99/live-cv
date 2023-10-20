@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #DFDFDF;
+    background-color: var(--gray-200);
     min-height: 100vh;
     font-family: 'Roboto', sans-serif;
 }
@@ -38,11 +38,10 @@ body {
 
     @media (min-width: 768px) {
         flex-basis: 40%;
-        /* max-width: 575px; */
         padding: 119px 60px;
         justify-content: end;
         width: 100%;
-        background-color: #DFDFDF;
+        background-color: var(--gray-200);
     }
 }
 
@@ -128,7 +127,7 @@ body {
 
 .contact-section__location-item {
     text-align: center;
-    color: #6A6A6A;
+    color: var(--gray-300);
     font-size: 14px;
 
     @media (min-width: 768px) {
@@ -150,7 +149,7 @@ body {
 }
 
 .last-name {
-    color: red;
+    color: var(--primary);
 }
 
 .role {
@@ -158,7 +157,7 @@ body {
     text-align: center;
     font-size: 16px;
     font-weight: 400;
-    color: #6A6A6A;
+    color: var(--gray-300);
 
     @media (min-width: 768px) {
         text-align: left;
@@ -178,7 +177,7 @@ body {
 }
 
 .section-title {
-    color: #6A6A6A;
+    color: var(--gray-300);
     text-transform: uppercase;
 }
 
@@ -232,7 +231,7 @@ body {
 }
 
 .entry-item__content > h3 {
-    color: #6A6A6A;
+    color: var(--gray-300);
     font-size: 14px;
     font-weight: 400;
 }
@@ -245,7 +244,7 @@ body {
 
 .entry-item__content > p {
     margin-top: 5px;
-    color: #6A6A6A;
+    color: var(--gray-300);
     font-size: 16px;
     font-weight: 400;
 }
@@ -271,7 +270,7 @@ body {
 .awards-section__content__entry > p {
     font-size: 16px;
     font-weight: 500;
-    color: #6A6A6A;
+    color: var(--gray-300);
 }
 
 .awards-section__content__entry > div {
@@ -284,5 +283,5 @@ body {
 .awards-section__content__entry > div > p,
 .awards-section__content__entry > div > span {
     font-size: 12px;
-    color: #6A6A6A;
+    color: var(--gray-300);
 }
